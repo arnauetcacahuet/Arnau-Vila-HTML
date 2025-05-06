@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fútbol Market - Compra y Venta</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0056b3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 120px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .product-details h3 {
+      margin-top: 0;
+    }
+
+    .btn {
+      background-color: #28a745;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #218838;
+    }
+
+    .form-section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #007bff;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Fútbol Market</h1>
+  <p>Tu sitio para comprar y vender productos de fútbol</p>
+</header>
+
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#comprar">Comprar</a>
+  <a href="#vender">Vender</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container" id="comprar">
+  <h2>Productos disponibles</h2>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/120" alt="Balón de fútbol">
+    <div class="product-details">
+      <h3>Balón Oficial Adidas</h3>
+      <p>Tamaño 5, aprobado por FIFA. Ideal para entrenamientos y partidos.</p>
+      <p><strong>Precio:</strong> $35</p>
+      <button class="btn">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/120" alt="Botines Nike">
+    <div class="product-details">
+      <h3>Botines Nike Mercurial</h3>
+      <p>Usados, buen estado. Talla 42.</p>
+      <p><strong>Precio:</strong> $50</p>
+      <button class="btn">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/120" alt="Camiseta">
+    <div class="product-details">
+      <h3>Camiseta Real Madrid 2023</h3>
+      <p>Original, nueva, talla L.</p>
+      <p><strong>Precio:</strong> $45</p>
+      <button class="btn">Comprar</button>
+    </div>
+  </div>
+</div>
+
+<div class="container form-section" id="vender">
+  <h2>Publica tu producto en venta</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre del producto:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+    <label for="precio">Precio ($):</label>
+    <input type="number" id="precio" name="precio" required>
+
+    <label for="imagen">URL de la imagen:</label>
+    <input type="text" id="imagen" name="imagen">
+
+    <input type="submit" value="Publicar producto">
+  </form>
+</div>
+
+<footer id="contacto">
+  <p>Contacto: info@futbolmarket.com | Tel: +34 600 123 456</p>
+  <p>&copy; 2025 Fútbol Market</p>
+</footer>
+
+</body>
+</html>
